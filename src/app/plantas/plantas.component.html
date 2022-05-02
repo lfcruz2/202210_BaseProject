@@ -1,0 +1,58 @@
+<br>
+<div class="container-fluid">
+  <div class="col-10 offset-1">
+    <h1>Vivero El Otoño</h1>
+    <hr class="style1">
+    <br>
+    <div class="row">
+      <img src="{{imageSrc}}" alt="{{imageAlt}}" />
+    </div>
+  </div>
+</div>
+<br>
+
+
+
+<div class="container-fluid">
+  <div class="col-10 offset-1">
+    <div class="card align-middle">
+      <div class="card">
+        <div class="card-body">
+          <table class="table align-middle table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre comun</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Clima</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let p of plantas;" class="item-row">
+                <th scope="row">
+                  <dd>{{p.id}}</dd>
+                </th>
+                <td>
+                  <dd>{{p.nombre_comun}}</dd>
+                </td>
+                <td>
+                  <dd>{{p.tipo}}</dd>
+                </td>
+                <td>
+                  <dd>{{p.clima}}</dd>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>Totla plantas de interior: {{isInterior}} <br>
+            Totla plantas de exterior: {{isExterior}}
+          </p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p align="center">
+    Contact us: +57 3102105253 - info@viveroelotonio.com - @viveroelotonio
+  </p>
